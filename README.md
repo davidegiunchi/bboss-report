@@ -23,6 +23,13 @@ Copyright (c) 2016 Davide Giunchi at Diennea. https://github.com/davidegiunchidi
 
 # 1 - Install
 
+* Download the code
+
+```
+git clone https://github.com/davidegiunchidiennea/bboss-report.git
+cd bboss-report
+```
+
 * Install the required Perl's module, on RedHat/Centos:
 ```
 yum install perl-Spreadsheet-WriteExcel
