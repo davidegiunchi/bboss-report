@@ -9,8 +9,10 @@
 4. License
 
 
-*BBoss Report - Bacula Boss's Report*
-Generate a spreadsheet containing a report of what Bacula save: jobname, fileset, pre-post scripts ecc. All written in a human readable's format
+**BBoss Report - Bacula Boss's Report**
+
+Generate a spreadsheet containing a report of what Bacula save: jobname, fileset, pre-post scripts ecc. All written in a human readable's format.
+
 It's useful to generate periodic reports or when your boss ask for a "report of what we are saving right now": bacula's web interface may be your first thought, but an xls file it's easier to share with other managers,
  and access to the bacula's web interface may be restricted in a separated nework or similar.
 
@@ -22,23 +24,30 @@ Copyright (c) 2016 Davide Giunchi at Diennea. https://github.com/davidegiunchidi
 # 1 - Install
 
 * Install the required Perl's module, on RedHat/Centos:
-
+```
 yum install perl-Spreadsheet-WriteExcel
+```
 
 on Debian/Ubuntu:
 
+```
 apt-get install libspreadsheet-writeexcel-perl
+```
 
 * copy the configuration file:
 
+```
 cp bboss-report.conf /etc/bacula/bboss-report.conf 
+```
 
 If your "bconsole" binary is not on /sbin/bconsole , please modify the configuration file
 
 * copy the bboss-report program and then run it:
 
+```
 cp bboss-report.pl /etc/bacula/scripts/
 /etc/bacula/scripts/bboss-report.pl /tmp/report.xls
+```
 
 The file /tmp/report.xls will contain the report.
 
