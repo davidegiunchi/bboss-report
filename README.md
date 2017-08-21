@@ -1,12 +1,13 @@
 
 # Bacula Boss's Report . Diennea s.r.l. by Davide Giunchi
+https://github.com/davidegiunchidiennea
 
-	   			      https://github.com/davidegiunchidiennea
 
 1. Install
-2. Various
-3. Bugs
-4. License
+2. Faq
+3. Various
+4. Bugs
+5. License
 
 
 **BBoss Report - Bacula Boss's Report**
@@ -58,7 +59,15 @@ cp bboss-report.pl /etc/bacula/scripts/
 
 The file /tmp/report.xls will contain the report.
 
-# 2 - VARIOUS
+# 2 - Faq
+
+* Q: why not an open format such as ODS or even CSV, which is more compatible with exploratory analysis tools?
+
+* A: I would have preferred to generate an ODS document, but i haven't found a good perl module to write an OpenDocument Spreadsheet file.
+I've discarded the CSV option, because, for this project, i prefer a file format that let me create some rich text format (bold,header,color ecc).
+I've found the module "Spreadsheet-WriteExcel" that's perfect for my needs, and the xls could be easly read with LibreOffice and converted on every format you need.
+
+# 3 - Various
 
 You are encourage to contribute this program, if you have patch, suggestion or
 critics please contact me.
@@ -67,11 +76,11 @@ This program has been tested with Bacula community as of version 7.4.0 and it sh
 Latest bbos-report's version can be found at:
 https://github.com/davidegiunchidiennea
 
-# 3 - BUGS
+# 4 - Bugs
 
 If you find a bug or you want to submit a patch, send a pull request on https://github.com/davidegiunchidiennea
 
-# 4 - LICENSE
+# 5 - License
 
 This program is Copyright(C) 2016 Diennea, and may be copied according to
 the GNU GENERAL PUBLIC LICENSE (GPL) Version 2 or a later version.  A copy of 
