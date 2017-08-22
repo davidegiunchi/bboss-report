@@ -24,7 +24,7 @@ Copyright (c) 2016 Davide Giunchi at Diennea. https://github.com/davidegiunchidi
 
 # 1 - Install
 
-* Download the code
+* Download the code on the server that run the bacula director:
 
 ```
 git clone https://github.com/davidegiunchidiennea/bboss-report.git
