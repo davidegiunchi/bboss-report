@@ -17,10 +17,6 @@ Generate a spreadsheet containing a report of what Bacula save: jobname, fileset
 It's useful to generate periodic reports or when your boss ask for a "report of what we are saving right now": bacula's web interface may be your first thought, but an xls file it's easier to share with other managers,
  and access to the bacula's web interface may be restricted in a separated nework or similar.
 
-LICENSE:
-
-Copyright (c) 2016 Davide Giunchi at Diennea. https://github.com/davidegiunchidiennea
-
 
 # 1 - Install
 
@@ -42,10 +38,11 @@ on Debian/Ubuntu:
 apt-get install libspreadsheet-writeexcel-perl
 ```
 
-* copy the configuration file:
+* copy the configuration file and modify the bconsole's path:
 
 ```
 cp bboss-report.conf /etc/bacula/bboss-report.conf 
+bconsole=$(which bconsole); sed -i "s|/sbin/bconsole|$bconsole|g" /etc/bacula/bboss-report.conf
 ```
 
 If your "bconsole" binary is not on /sbin/bconsole , please modify the configuration file
@@ -80,7 +77,11 @@ https://github.com/davidegiunchidiennea
 
 If you find a bug or you want to submit a patch, send a pull request on https://github.com/davidegiunchidiennea
 
-# 5 - License
+# 5 - Thanks
+
+Heitor Faria for some configuration's hints
+
+# 6 - License
 
 This program is Copyright(C) 2016 Diennea, and may be copied according to
 the GNU GENERAL PUBLIC LICENSE (GPL) Version 2 or a later version.  A copy of 
