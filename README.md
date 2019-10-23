@@ -23,7 +23,7 @@ It's useful to generate periodic reports or when your boss ask for a "report of 
 * Download the code on the server that run the bacula director:
 
 ```
-git clone https://github.com/davidegiunchidiennea/bboss-report.git
+git clone https://github.com/davidegiunchi/bboss-report.git
 cd bboss-report
 ```
 
@@ -71,11 +71,11 @@ critics please contact me.
 This program has been tested with Bacula community as of version 7.4.0 and it should work even with Bacula Enterprise, not tested with BareOS.
 
 Latest bbos-report's version can be found at:
-https://github.com/davidegiunchidiennea
+https://github.com/davidegiunchi
 
 # 4 - Bugs
 
-If you find a bug or you want to submit a patch, send a pull request on https://github.com/davidegiunchidiennea
+If you find a bug or you want to submit a patch, send a pull request on https://github.com/davidegiunchi
 
 # 5 - Thanks
 
