@@ -71,11 +71,11 @@ critics please contact me.
 This program has been tested with Bacula community as of version 7.4.0 and it should work even with Bacula Enterprise, not tested with BareOS.
 
 Latest bbos-report's version can be found at:
-https://github.com/davidegiunchi
+https://github.com/davidegiunchi/bboss-report
 
 # 4 - Bugs
 
-If you find a bug or you want to submit a patch, send a pull request on https://github.com/davidegiunchi
+If you find a bug or you want to submit a patch, send a pull request on https://github.com/davidegiunchi/bboss-report
 
 # 5 - Thanks
 
